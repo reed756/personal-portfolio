@@ -236,21 +236,21 @@ footer {
     opacity: 0.7;
   }
   .fa-google {
-    background: var(--darkblue);
+    background: black;
     color: white;
   }
 
   .fa-linkedin {
-    background: var(--darkblue);
+    background: black;
     color: white;
   }
 
   .fa-github {
-    background: var(--darkblue);
+    background: black;
     color: white;
   }
   .fa-twitter {
-    background: var(--darkblue);
+    background: black;
     color: white;
   }
 .footer-text {
