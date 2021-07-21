@@ -1,0 +1,255 @@
+/* CSS RESET */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: 'Play', sans-serif;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+    box-sizing: border-box;
+}
+:root {
+    --blue: #001489;
+    --yellow: #fff2a8;
+    --darkblue: #140a47;
+}
+.content {
+    background-color: var(--yellow);
+}
+/* HEADER */
+header {
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 80% 1fr;
+    height: 100px;
+    background-color: var(--blue);
+}
+.heading {
+    grid-column-start: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo a:hover {
+    text-decoration: underline;
+}
+nav ul {
+    display: flex;
+}
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+}
+nav li {
+    padding: 10px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+/* OPENING */
+.welcome {
+    display: grid;
+    grid-template-columns: 1fr 80% 1fr;
+}
+.opening {
+    grid-column-start: 2;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.opening h1 {
+    font-size: 100px;
+    margin: 10px;
+    color: var(--darkblue);
+}
+.opening p {
+    font-size: 75px;
+    margin: 10px;
+    color: var(--blue);
+}
+.opening a {
+    font-size: 75px;
+    margin: 10px;
+    color: var(--blue);
+    border: 5px solid black;
+    text-decoration: none;
+    padding: 5px;
+    margin: 10px;
+}
+/* SECTIONS */
+section {
+    display: grid;
+    grid-template-columns: 1fr 80% 1fr;
+    height: auto;
+    margin-bottom: 10px;
+}
+section h2 {
+    font-size: 75px;
+    color: var(--darkblue);
+}
+section p {
+    font-size: 25px;
+    color: var(--blue);
+}
+/* ABOUT */
+.about-section {
+    grid-column-start: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.about-image {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    width: auto;
+    grid-column-start: 2;
+}
+/* PROJECTS */
+.projects-section {
+    grid-column-start: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.projects-section h2 {
+    margin-bottom: 20px;
+}
+.project {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.project img {
+    width: 100%;
+}
+.project img:hover {
+    transform: scale(1.01);
+    box-shadow: 3px 3px #140a47;
+}
+.project-description {
+    grid-column-start: 2;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.project h3 {
+    font-size: 50px;
+    color: var(--darkblue);
+}
+.project p {
+    margin-top: 10px;
+}
+.project a {
+    text-decoration: none;
+    width: fit-content;
+}
+.project a:hover {
+    text-decoration: underline;
+}
+/* SKILLS */
+.skills {
+    grid-column: span 3;
+}
+.skills-section {
+    background-color: white;
+    height: 200px;
+}
+.skills-section h2 {
+    text-align: center;
+    margin-top: 15px;
+}
+.skill-logos {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+/* FOOTER */
+footer {
+    height: 100px;
+    background-color: var(--blue);
+    margin-top: -9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .fa:hover {
+    opacity: 0.7;
+  }
+  .fa-google {
+    background: var(--darkblue);
+    color: white;
+  }
+
+  .fa-linkedin {
+    background: var(--darkblue);
+    color: white;
+  }
+
+  .fa-github {
+    background: var(--darkblue);
+    color: white;
+  }
+  .fa-twitter {
+    background: var(--darkblue);
+    color: white;
+  }
+.footer-text {
+    color: white;
+    margin-top: 10px;
+}
+.footer-links {
+    margin: 5px;
+}
