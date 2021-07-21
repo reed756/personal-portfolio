@@ -121,6 +121,10 @@ nav a:hover {
     padding: 5px;
     margin: 10px;
 }
+.opening a:hover {
+    background-color: var(--darkblue);
+    color: white;
+}
 /* SECTIONS */
 section {
     display: grid;
@@ -148,6 +152,9 @@ section p {
     height: 100%;
     width: auto;
     grid-column-start: 2;
+}
+.about-image img {
+    border-radius: 50%;
 }
 /* PROJECTS */
 .projects-section {
