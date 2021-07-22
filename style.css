@@ -149,8 +149,7 @@ section p {
 .about-image {
     display: flex;
     justify-content: flex-end;
-    height: 100%;
-    width: auto;
+    height: 546px;
     grid-column-start: 2;
 }
 .about-image img {
@@ -259,4 +258,77 @@ footer {
 }
 .footer-links {
     margin: 5px;
+}
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1800px) {
+    .opening p, a {
+        font-size: 50px;
+    }
+    .about-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .about-image {
+        justify-content: center;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 1320px) {
+    .projects-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .project {
+        display: flex;
+        flex-direction: column;
+    }
+    .project-description {
+        margin-left: 0;
+    }
+}
+@media only screen and (max-width: 940px) {
+    .opening h1 {
+        font-size: 50px;
+    }
+    .opening p, .opening a {
+        font-size: 35px;
+    }
+    .skill-logos p a img {
+        width: 40px;
+        height: 40px;
+    }
+}
+@media only screen and (max-width: 705px) {
+    .logo {
+        display: none;
+    }
+    .heading {
+        justify-content: end;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .about-image img {
+        width: 300px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .skill-logos p a img {
+        width: 35px;
+        height: 35px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .skill-logos p a img {
+        width: 22px;
+        height: 22px;
+    }
+    section h2 {
+        font-size: 40px;
+    }
+    .project h3 {
+        font-size: 30px;
+    }
+    header a {
+        font-size: 30px;
+    }
 }
